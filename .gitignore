@@ -1,0 +1,18 @@
+# Keys and credentials
+*.pem
+*.key
+*private*
+.env
+
+# Password notes
+passwords*
+bandit-passwords*
+
+# AWS and Terraform secrets (for later modules)
+.aws/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Mac clutter
+.DS_Store
