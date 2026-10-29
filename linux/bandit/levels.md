@@ -12,7 +12,7 @@ Progress log of the Bandit wargame, written in my own words. Passwords are left 
 | 5 → 6 | find by size and permissions | Done |
 | 6 → 7 | find by owner, group and size | Done |
 | 7 → 8 | grep | Done |
-| 8 → 9 | | |
+| 8 → 9 | sort and uniq | Done |
 | 9 → 10 | strings and grep | Done |
 | 10 → 11 | base64 | Done |
 | 11 → 12 | ROT13 with tr | Done |
@@ -70,9 +70,12 @@ Progress log of the Bandit wargame, written in my own words. Passwords are left 
 **Learned:** `grep` prints only the lines that match.
 
 ## Level 8 → 9
-**Goal:**
-**Commands:**
-**Learned:**
+**Goal:** find the one line in a file that appears only once.
+
+**Steps:**
+1. `sort data.txt | uniq -u`
+
+**Learned:** `uniq` only compares neighbouring lines, so the file has to be sorted first. `-u` prints only lines that aren't repeated.
 
 ## Level 9 → 10
 **Goal:** pull readable text out of a mostly binary file.
